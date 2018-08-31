@@ -8,7 +8,7 @@ defmodule Rummage.Phoenix.Mixfile do
     [
       app: :rummage_phoenix,
       version: @version,
-      elixir: "~> 1.3.4",
+      elixir: "~> 1.5",
       deps: deps(),
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
@@ -56,7 +56,7 @@ end
       {:excoveralls, "~> 0.3", only: :test},
       {:inch_ex, "~> 0.5", only: [:dev, :test, :docs]},
       {:phoenix, "~> 1.3.0"},
-      {:phoenix_html, "~> 2.6"},
+      {:phoenix_html, "~> 2.10"},
       {:postgrex, ">= 0.0.0", only: [:test]},
       {:rummage_ecto, "~> 1.2.0"},
     ]
